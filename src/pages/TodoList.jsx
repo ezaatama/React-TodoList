@@ -12,16 +12,20 @@ const TodoList = () => {
     { text: "Learning Styling in React!" }
   ]);
 
+  const [showAdd, setShowadd] = useState(false);
+
   const addTodo = (value) => {
     const addedTodo = [...todos, { text: value }];
 
     setTodos(addedTodo);
   };
 
+  const showAddToogle = () => setShowadd(!showAdd);
+
   return (
     <Paper>
-      <Header />
-      <TodoForm addTodo={addTodo} />
+      <Header showAddToogle={showAddToogle} />
+      <TodoForm addTodo={addTodo} showAdd={showAdd} />
       <Todos todos={todos} />
     </Paper>
   );
