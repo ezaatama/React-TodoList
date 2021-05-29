@@ -39,7 +39,7 @@ html {
 
 .container {
   width: 600px;
-  height: 600px;
+  height: auto;
   background-color: #f2eecb;
   border-radius: 4px;
   padding: 32px;
@@ -144,4 +144,16 @@ html {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
+}
+
+.todo-placeholder-text {
+  font-family: "Homemade Apple", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  padding: 16px;
+}
+
+.add-button-placeholder-text {
+  font-family: "Bungee", sans-serif;
+  font-size: 24px;
 }
